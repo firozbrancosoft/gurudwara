@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:gurudwara/features/GurudwaraDetails/screen/gurudwara_details_screen.dart';
 import 'package:gurudwara/features/intro/screens/intro_screen.dart';
 import '../features/auth/screens/login_screen.dart';
 import '../features/dashboard/screens/dashboard_screen.dart';
@@ -14,6 +15,7 @@ class RouteHelper {
   static String getRewardHistoryRoute() => AppRoutes.rewardsHistory;
   static String getTotalPointsRoute() => AppRoutes.totalPoints;
   static String getHistoryRoute() => AppRoutes.history;
+  static String getGuruDwaraRoute() => AppRoutes.gurudwaraDetails;
 
   static List<GetPage> routes = [
     GetPage(
@@ -48,6 +50,11 @@ class RouteHelper {
     GetPage(
       name: AppRoutes.history,
       page: () => const HistoryScreen(), // Create this screen
+    ),
+
+    GetPage(
+      name: AppRoutes.gurudwaraDetails,
+      page: () => const GurudwaraDetailsScreen(),
     ),
 
   ];

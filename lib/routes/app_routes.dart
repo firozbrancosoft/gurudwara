@@ -13,4 +13,7 @@ class AppRoutes {
   static const String about = '/about';
   static const String terms = '/terms';
   static const String privacy = '/privacy';
+
+  static const String gurudwaraDetails = '/gurudwara-details';
+
 }
